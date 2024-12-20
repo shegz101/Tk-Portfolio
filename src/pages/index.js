@@ -1,0 +1,5 @@
+export { Hero } from './hero/Hero'
+export { AboutMe } from './about/AboutMe'
+export { MySkills } from './about/MySkills'
+export { ContactMe } from './contact/ContactMe'
+export { MyProjects } from './projects/MyProjects'
