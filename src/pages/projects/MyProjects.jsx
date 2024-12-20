@@ -23,8 +23,16 @@ export function MyProjects() {
         <div className="w-[50%] space-y-5 h-full bg-white shadow-md rounded-lg py-5 px-10">
           <h3 className="text-2xl font-bold text-gray-800">Sigil</h3>
           <p className="text-lg uppercase text-gray-500 mb-2 font-semibold">
-            Dart Flutter Riverpod Sentry
+            <ul className="flex space-x-4">
+              {["Dart", "Flutter", "Riverpod", "Sentry"].map((item, index) => (
+                <li key={index} className="flex items-center justify-center">
+                  <span className="mr-2 text-gray-500">•</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
           </p>
+
           <p className="text-gray-600 text-base text-justify">
           A fintech application designed to enable seamless 
           cross-border and cryptocurrency transactions, providing 
@@ -56,9 +64,28 @@ export function MyProjects() {
         <div className="w-[50%] space-y-5 h-full bg-white shadow-md rounded-lg py-5 px-10">
           <h3 className="text-2xl font-bold text-gray-800">Guida</h3>
           <p className="text-lg uppercase text-gray-500 mb-2 font-semibold">
-            Dart Flutter Riverpod Firebase Google Maps API Google Places API
-            Google Sheet API
+            <ul className="flex flex-wrap gap-x-4 gap-y-2">
+              {[
+                "Dart",
+                "Flutter",
+                "Riverpod",
+                "Firebase",
+                "Google Maps API",
+                "Google Places API",
+                "Google Sheet API",
+              ].map((item, index) => (
+                <li
+                  key={index}
+                  className="flex items-center justify-center whitespace-nowrap"
+                >
+                  <span className="mr-2 text-gray-500">•</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
           </p>
+
+          
           <p className="text-gray-600 text-base text-justify">
           A navigation-focused mobile application designed to improve campus 
           accessibility within the University of Lagos (UNILAG). The app 
