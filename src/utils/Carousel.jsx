@@ -39,7 +39,7 @@ const Carousel = ({ images }) => {
   };
 
   return (
-    <div className="relative z-0 overflow-hidden h-full w-1/2 bg-gray-100 rounded-lg">
+    <div className="relative z-0 overflow-hidden h-full w-[30%] bg-gray-100 rounded-lg">
       {/* Image Carousel */}
       <div
         ref={carouselRef}
