@@ -18,7 +18,7 @@ export function AboutMe() {
     <motion.div
       ref={ref}
       id="aboutme"
-      className="space-y-3 my-[70px] px-[100px]"
+      className="space-y-3 my-[70px] px-[20px] md:px-[100px]"
       initial="hidden"
       animate={controls}
       variants={{

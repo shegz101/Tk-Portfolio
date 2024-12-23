@@ -10,10 +10,10 @@ export function Hero() {
   };
 
   return (
-    <div className='flex bg-[#02142c] justify-between pt-[120px] pb-[70px] px-[100px] gap-[70px] w-[100%] items-center'>
-      <div className='space-y-8 w-[70%]'>
+    <div className='flex flex-col-reverse md:flex-row bg-[#02142c] justify-between pt-[80px] md:pt-[120px] pb-[70px] px-[20px] md:px-[100px] gap-[70px] w-[100%] items-center'>
+      <div className='space-y-8 w-[100%] md:w-[70%]'>
         <div className='space-y-8'>
-          <p className='text-blue-500 font-bold text-3xl'>Hi, I'm Olaoluwa! 👋🏽</p>
+          <p className='text-blue-500 font-bold text-2xl md:text-3xl'>Hi, I'm Olaoluwa! 👋🏽</p>
           {/* The TypeWriting Function */}
           <TypeWriter texts={[
             "Mobile Developer",
@@ -23,13 +23,13 @@ export function Hero() {
           ]}
           typingSpeed={120} // Optional
           pauseDuration={1500} // Optional
-          styling="font-medium text-[#ffffff] text-3xl"
+          styling="font-medium text-[#ffffff] text-xl md:text-3xl"
           />
         </div>
 
         <div className='space-y-12 text-[#ffffff]'>
             <div>
-              <p className='text-2xl font-semibold'>Turning 0's and 1's into a solution, One Line at a Time.</p>
+              <p className='text-xl md:text-2xl font-semibold'>Turning 0's and 1's into a solution, One Line at a Time.</p>
             </div>
 
             {/* Buttons */}
@@ -49,8 +49,8 @@ export function Hero() {
       </div>
 
       {/* The Avatar */}
-      <div className='w-[50%]'>
-        <img src={Avatar} alt="Avatar" className='rounded-full w-[450px] h-[400px] object-cover"'/>
+      <div className='w-[50%] '>
+        <img src={Avatar} alt="Avatar" className='rounded-full w-[200px] h-[200px] md:w-[450px] md:h-[400px] object-cover"'/>
       </div>
     </div>
   )

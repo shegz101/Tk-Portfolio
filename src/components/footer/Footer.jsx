@@ -4,7 +4,7 @@ import { GrGithub } from "react-icons/gr";
 
 export function Footer() {
   return (
-    <footer className='bg-[#02142c] relative flex justify-between text-white py-4 px-[100px]'>
+    <footer className='bg-[#02142c] relative flex justify-between text-white py-4 pl-[20px] pr-[60px] md:px-[100px]'>
         <div className='flex flex-col space-y-3'>
             <div>
                 <p className="text-sm">Copyright © 2024, Toki Olaoluwa</p>  

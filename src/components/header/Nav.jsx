@@ -1,5 +1,6 @@
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 export function Nav() {
   const handleScrollToContact = () => {
@@ -16,7 +17,7 @@ export function Nav() {
     }
   };
   return (
-    <div className='w-[100%] z-50 fixed bg-[#02142c] px-[100px] pt-[10px] pb-2 shadow-md border-b-2 border-blue-100'>
+    <div className='w-[100%] z-50 fixed bg-[#02142c] px-[20px] md:px-[100px] pt-[10px] pb-2 shadow-md md:border-b-2 border-blue-100'>
       <ToastContainer
         position="top-right"
         autoClose={5000}
@@ -33,7 +34,7 @@ export function Nav() {
         <div>
           <p className='text-[#ffffff] font-bold text-2xl'>Olaoluwa</p>
         </div>
-        <div className='flex space-x-5 text-[#ffffff] items-center text-xl'>
+        <div className='hidden md:flex space-x-5 text-[#ffffff] items-center text-xl'>
           <p className='cursor-pointer' onClick={handleScrollToAbout}>About Me</p>
           <p className='cursor-pointer' onClick={handleScrollToContact}>Get In Touch</p>
           <a
@@ -44,6 +45,9 @@ export function Nav() {
           >
             View Resume
           </a>
+        </div>
+        <div className="md:hidden">
+          <RxHamburgerMenu className="text-[#FFFFFF] font-extrabold text-3xl"/>
         </div>
       </div>
       
